@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Custom Board Game</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="lobby">
+        <!-- Lobby content will go here -->
+    </div>
+
+    <div id="gameArea">
+        <!-- Game canvas and other elements will be injected here -->
+    </div>
+
+    <!-- Flex container for Roll Dice button -->
+    <div id="rollDiceContainer">
+        <button id="rollDiceButton" style="display: none;">Roll Dice</button>
+    </div>
+
+
+
+        <!-- Modal Overlay -->
+    <div id="modalOverlay">
+        <div id="modal">
+            <div id="modalContent"></div>
+            <div id="modalButtons"></div>
+        </div>
+    </div>
+
+        <!-- New turn indicator div -->
+        <div id="turnIndicatorContainer">
+            <div id="turnIndicator"></div>
+        </div>
+
+    <script src="game.js"></script>
+    <!-- In index.html -->
+<audio id="diceSound" src="dice-roll.mp3"></audio>
+<audio id="moveSound" src="move.mp3"></audio>
+
+</body>
+
+</html>
